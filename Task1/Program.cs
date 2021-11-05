@@ -16,7 +16,7 @@ namespace Task1
                 {
                     if ((i + j) % 2 != 0)
                     {
-                        Console.WriteLine(" ");
+                        Console.Write(" ");
                     }
                     else
                     {
