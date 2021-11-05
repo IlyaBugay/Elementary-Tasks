@@ -27,6 +27,30 @@ namespace Task1
             }
         }
 
+        static int InputIntegervalue(string message)
+        {
+            bool isvalidInput;
+            int result;
+            do
+            {
+                Console.WriteLine("Enter {0}", message);
+                isvalidInput = int.TryParse(Console.ReadLine(), out result);
+
+                if (!isvalidInput)
+                {
+                    Console.WriteLine("Error format!");
+                }
+            } while (!isvalidInput);
+
+            return result;
+        }
+
+        static void SetChessBoardParameters(Point point)
+        {
+            point.X = InputIntegervalue("width: ");
+            point.Y = InputIntegervalue("height: ");
+        }
+
         static void Main(string[] args)
         {
 
