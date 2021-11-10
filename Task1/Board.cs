@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task1
 {
-    class Point
+    class Board
     {
-        private int x;
-        private int y;
+        private int row;
+        private int column;
 
-        public int X
+        public int Row
         {
             get 
             {
-                return x; 
+                return row; 
             }
             set 
             {
@@ -24,15 +20,15 @@ namespace Task1
                     Console.WriteLine("Error! Input positive value");
                 }
 
-                x = value; 
+                row = value; 
             }
         }
-
-        public int Y
+        
+        public int Column
         {
             get 
             {
-                return y; 
+                return column; 
             }
             set 
             {
@@ -41,7 +37,7 @@ namespace Task1
                     Console.WriteLine("Error! Input positive value");
                 }
 
-                y = value; 
+                column = value; 
             }
         }
     }
