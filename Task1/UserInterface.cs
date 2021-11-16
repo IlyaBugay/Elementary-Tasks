@@ -4,13 +4,10 @@ namespace Task1
 {
     class UserInterface
     {
-        const string widthMessage = "width: ";
-        const string heightMessage = "height: ";
-
         public static void SetChessBoardParameters(Board point)
         {
-            point.Row = Controller.ValidateInputIntegervalue($"{widthMessage}");
-            point.Column = Controller.ValidateInputIntegervalue($"{heightMessage}");
+            point.Row = Controller.ValidateInputIntegervalue($"{Messages.widthMessage}");
+            point.Column = Controller.ValidateInputIntegervalue($"{Messages.heightMessage}");
         }
 
         public static void DisplayChessBoard(Board point)

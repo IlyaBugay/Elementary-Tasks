@@ -4,9 +4,6 @@ namespace Task1
 {
     class Controller
     {
-        const string enterMessage = "Enter";
-        const string errorFormatMessage = "Error format";
-
         public static int ValidateInputIntegervalue(string message)
         {
             #region Tryparse
@@ -33,16 +30,16 @@ namespace Task1
             {
                 try
                 {
-                    Console.Write($"{enterMessage} {message}");
+                    Console.Write($"{Messages.enterMessage} {message}");
                     outputNumber = int.Parse(Console.ReadLine());
                     isValidInput = true;
                 }
                 catch
                 {
-                    Console.WriteLine($"{errorFormatMessage}");
+                    Console.WriteLine($"{Messages.errorFormatMessage}");
                 }
             }
-
+            
             return outputNumber;
             #endregion
         }
