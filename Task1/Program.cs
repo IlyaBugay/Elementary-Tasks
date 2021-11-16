@@ -7,7 +7,7 @@ namespace Task1
         static void Main(string[] args)
         {
             Console.Title = "Task 1";
-            
+            ExecuteProgram.ExecuteApp();
             Console.ReadKey();
         }
     }
