@@ -15,13 +15,13 @@ namespace Task7
 
             do
             {
-                Console.WriteLine("Input sequence length:");
+                Console.WriteLine(Messages.INPUT_SEQUENCE_LENGTH_MESSAGE);
                 sequenceLength = Console.ReadLine();
             } while (!Validator.IsValid(sequenceLength));
 
             do
             {
-                Console.WriteLine("enter minimal square:");
+                Console.WriteLine(Messages.INPUT_MIN_SQUARE_MESSAGE);
                 minSquare = Console.ReadLine();
             } while (!Validator.IsValid(minSquare));
 

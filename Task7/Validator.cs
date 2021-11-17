@@ -18,13 +18,13 @@ namespace Task7
             }
             catch
             {
-                Console.WriteLine("Error! Please, input a numeric value");
+                Console.WriteLine(Messages.NUMERIC_VALUE_ERROR);
                 return false;
             }
 
             if (numericValue < 0)
             {
-                Console.WriteLine("Error! Please, input a positive value");
+                Console.WriteLine(Messages.POSITIVE_VALUE_ERROR);
             }
 
             return numericValue >= 0;
