@@ -8,9 +8,9 @@ namespace Task1
 {
     class Messages
     {
-        public const string enterMessage = "Input value of";
-        public const string errorFormatMessage = "Error format";
-        public const string widthMessage = "width: ";
-        public const string heightMessage = "height: ";
+        public const string INPUT_MESSAGE = "Input value of";
+        public const string ERROR_FORMAT_MESSAGE = "Error format";
+        public const string INPUT_WIDTH_MESSAGE = "width: ";
+        public const string INPUT_HEIGHT_MESSAGE = "height: ";
     }
 }

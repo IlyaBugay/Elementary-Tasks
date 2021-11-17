@@ -4,7 +4,7 @@ namespace Task1
 {
     class Controller
     {
-        public static int ValidateInputIntegervalue(string message)
+        public static int ValidateInputIntegerValue(string message)
         {
             #region Tryparse
             //bool isValidInput;
@@ -30,13 +30,13 @@ namespace Task1
             {
                 try
                 {
-                    Console.Write($"{Messages.enterMessage} {message}");
+                    Console.Write($"{Messages.INPUT_MESSAGE} {message}");
                     outputNumber = int.Parse(Console.ReadLine());
                     isValidInput = true;
                 }
                 catch
                 {
-                    Console.WriteLine($"{Messages.errorFormatMessage}");
+                    Console.WriteLine($"{Messages.ERROR_FORMAT_MESSAGE}");
                 }
             }
             

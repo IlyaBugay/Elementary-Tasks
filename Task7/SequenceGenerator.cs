@@ -8,16 +8,15 @@ namespace Task7
 {
     class SequenceGenerator
     {
-        public static string GetSequence(int length, int minSquare)
+        public static string GetSequence(Sequence sequence)
         {
             StringBuilder result = new StringBuilder();
-            int firstNum = (int)Math.Ceiling(Math.Sqrt(minSquare));
-
-            if (length > 0)
+            int firstNum = (int)Math.Ceiling(Math.Sqrt(sequence.MinimalSquare));
+            if (sequence.SequenceLength > 0)
             {
-                for (int i = 0; i < length; i++, firstNum++)
+                for (int i = 0; i < sequence.SequenceLength; i++, firstNum++)
                 {
-                    if (i == length - 1)
+                    if (i == sequence.SequenceLength - 1)
                     {
                         result.Append(firstNum);
                     }

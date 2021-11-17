@@ -6,8 +6,8 @@ namespace Task1
     {
         public static void SetChessBoardParameters(Board point)
         {
-            point.Row = Controller.ValidateInputIntegervalue($"{Messages.widthMessage}");
-            point.Column = Controller.ValidateInputIntegervalue($"{Messages.heightMessage}");
+            point.Row = Controller.ValidateInputIntegerValue($"{Messages.INPUT_WIDTH_MESSAGE}");
+            point.Column = Controller.ValidateInputIntegerValue($"{Messages.INPUT_HEIGHT_MESSAGE}");
         }
 
         public static void DisplayChessBoard(Board point)
