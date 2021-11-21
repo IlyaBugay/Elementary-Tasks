@@ -2,7 +2,7 @@
 
 namespace Task1
 {
-    class Controller
+    class Validator
     {
         public static int ValidateInputIntegerValue(string message)
         {
