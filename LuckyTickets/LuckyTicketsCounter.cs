@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
-namespace Task6
+namespace LuckyTickets
 {
-    public class LuckyTicketsCounter
+    class LuckyTicketsCounter
     {
         private const string SIMPLE_METHOD_MESSAGE = "Number of lucky tickets by Simple Method - ";
         private const string COMPLICATED_METHOD_MESSAGE = "Number of lucky tickets by Complicated Method - ";
